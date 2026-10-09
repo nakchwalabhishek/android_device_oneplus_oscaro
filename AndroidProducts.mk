@@ -5,5 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_oscaro.mk
+    $(LOCAL_DIR)/statix_oscaro.mk
 
+COMMON_LUNCH_CHOICES := \
+    statix_oscaro-bp4a-userdebug \
+    statix_oscaro-bp4a-user
