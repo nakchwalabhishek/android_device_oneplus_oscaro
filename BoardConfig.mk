@@ -16,5 +16,10 @@ BOARD_SUPER_PARTITION_SIZE := 11190403072
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# StatiXOS: prebuilt kernel (device/oneplus/oscaro-kernel, branch bp4a)
+TARGET_KERNEL_DIR := device/oneplus/oscaro-kernel
+BOARD_PREBUILT_DTBIMAGE_DIR := $(TARGET_KERNEL_DIR)
+BOARD_PREBUILT_DTBOIMAGE := $(BOARD_PREBUILT_DTBIMAGE_DIR)/dtbo.img
+
 # Inherit the proprietary files
 -include vendor/oneplus/oscaro/BoardConfigVendor.mk
